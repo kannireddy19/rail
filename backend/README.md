@@ -1,0 +1,41 @@
+# Online Railway Reservation System
+
+A microservices-based Railway Reservation System developed using Java Full Stack technologies.
+
+## Tech Stack
+- Java
+- Spring Boot
+- Spring Security
+- Spring Cloud
+- Eureka Server
+- API Gateway
+- React
+- MySQL
+- JWT Authentication
+
+## Features
+- User Registration & Login
+- Train Search
+- Ticket Booking
+- Reservation Management
+- Payment Module
+- Admin Dashboard
+- Service Discovery using Eureka
+- API Gateway Routing
+
+## Microservices
+- User Service
+- Train Service
+- Reservation Service
+- Payment Service
+- API Gateway
+- Eureka Server
+
+## Frontend
+React-based responsive UI for users and admin.
+
+## Backend
+Spring Boot microservices architecture with REST APIs.
+
+## Author
+Sandupatla Karunakar
