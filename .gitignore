@@ -1,0 +1,22 @@
+# Eclipse
+.metadata/
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Build
+target/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
