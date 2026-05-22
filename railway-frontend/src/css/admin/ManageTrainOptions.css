@@ -1,0 +1,115 @@
+.manage-train-options {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #fceff9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 0.6s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.manage-train-options::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(#d0eaff 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.2;
+  z-index: 0;
+  animation: drift 60s linear infinite;
+}
+
+@keyframes drift {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(40px, 40px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.manage-train-options h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+.manage-back-button {
+  background: rgba(0, 123, 255, 0.9);
+  color: #fff;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+  z-index: 1;
+}
+
+.manage-back-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.3);
+}
+
+.manage-train-option-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 420px;
+  z-index: 1;
+}
+
+.manage-train-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manage-train-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.2);
+  background: rgba(234, 246, 255, 0.95);
+  color: #007bff;
+}
+
+.train-card-icon {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.manage-train-card:hover .train-card-icon {
+  transform: scale(1.1);
+}

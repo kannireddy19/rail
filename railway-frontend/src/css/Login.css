@@ -1,0 +1,176 @@
+/* Full-height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333;
+}
+
+/* Centered login container */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  background-image: url('../images/login.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+/* Ensure content appears above background overlay */
+.login-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Login form */
+.login-container form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.login-container h2 {
+ color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Input fields */
+.login-container .login-input,
+.login-container .login-role {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-container .login-input:focus,
+.login-container .login-role:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+/* Login button */
+.login-container .loginpage-button {
+  padding: 0.75rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container .loginpage-button:hover {
+  background-color: #5a67d8;
+}
+
+.login-container .loginpage-button:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+/* Admin button variant */
+.login-container .admin-login {
+  background-color: #e53e3e;
+}
+
+.login-container .admin-login:hover {
+  background-color: #c53030;
+}
+
+/* Error alert */
+.login-container .error-message {
+  background: #ffe0e0;
+  color: #c53030;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Register section */
+.login-container .register-link {
+  margin-top: 2rem;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.login-container .register-link:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.login-container .register-link a {
+  color: #edf2ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-container .register-link a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Home button */
+.login-container .home-button {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  color: #edf2ff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none; /* Prevent underline by default */
+}
+
+.login-container .home-button:hover {
+  text-decoration: none; /* Prevent underline on hover */
+}

@@ -1,0 +1,90 @@
+/* src/css/UserDashboard.css */
+
+.dashboard-container {
+  padding: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #333;
+}
+
+.welcome-message {
+  font-size: 20px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #d62828;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  font-size: 50px;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+}
+.welcome-message {
+  font-size: 28px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+}
+
+.username-highlight {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0077b6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}

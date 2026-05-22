@@ -1,0 +1,120 @@
+.edit-train-form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+h2 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+}
+
+.back-button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+
+.success-message, .error-message {
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.train-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.train-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  color: #023e8a;
+}
+
+.train-form input[type="text"],
+.train-form input[type="number"],
+.train-form input[type="date"] {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.train-form input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+fieldset {
+  border: 1px solid #0077b6;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-top: 10px;
+}
+
+legend {
+  font-weight: 700;
+  color: #0077b6;
+  padding: 0 6px;
+}
+
+fieldset label {
+  margin-top: 10px;
+}
+
+.submit-button {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #005f87;
+}

@@ -1,0 +1,98 @@
+.reservation-form-container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f3f7fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.back-button {
+  background-color: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.reservation-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #003366;
+}
+
+.reservation-form .form-group {
+  margin-bottom: 16px;
+}
+
+.reservation-form .form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.passenger-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.passenger-group input,
+.passenger-group select {
+  flex: 1 1 20%;
+  min-width: 120px;
+}
+
+.add-passenger-btn,
+.submit-btn {
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #004080;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.add-passenger-btn:hover,
+.submit-btn:hover {
+  background-color: #0059b3;
+}
+.remove-passenger-btn {
+  background-color: transparent;
+  border: 1px solid red;
+  color: red;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+  height: fit-content;
+  transition: background-color 0.3s ease;
+}
+
+.remove-passenger-btn:hover {
+  background-color: red;
+  color: white;
+}

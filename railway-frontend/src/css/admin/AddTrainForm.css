@@ -1,0 +1,116 @@
+/* AddTrainForm.css */
+.train-form-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.train-form-back-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.train-form-back-button:hover {
+  background-color: #5a6268;
+}
+
+.train-form-wrapper h2 {
+  color: #343a40;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.train-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.train-form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.train-form-row label {
+  font-weight: 600;
+  color: #495057;
+}
+
+.train-form-row input {
+  padding: 0.6rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.train-form-row input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+fieldset {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+fieldset legend {
+  font-weight: 600;
+  color: #495057;
+  padding: 0 0.5rem;
+}
+
+.train-form-submit {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.train-form-submit:hover {
+  background-color: #218838;
+}
+
+.train-form-error {
+  color: #dc3545;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.train-form-success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .train-form-wrapper {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

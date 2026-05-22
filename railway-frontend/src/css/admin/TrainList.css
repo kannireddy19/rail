@@ -1,0 +1,151 @@
+/* src/css/admin/TrainList.css */
+
+.train-list-container {
+  max-width: 1200px;
+  height: calc(100vh - 100px); /* Adjust if you have a header/footer */
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.train-list-container::-webkit-scrollbar {
+  width: 8px;
+}
+.train-list-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 6px;
+}
+.train-list-container::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+.back-button {
+  background-color: #eee;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #d4d4d4;
+}
+
+h2 {
+  text-align: center;
+  color: #0077b6;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.error-message,
+.success-message {
+  padding: 12px 20px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.error-message {
+  background-color: #ffe9e9;
+  color: #d32f2f;
+  border: 1px solid #f5c6cb;
+}
+
+.success-message {
+  background-color: #e6f9ec;
+  color: #2e7d32;
+  border: 1px solid #b7e1c1;
+}
+
+/* Grid layout for cards */
+.train-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual train card */
+.train-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.train-card:hover {
+  transform: translateY(-5px);
+}
+
+.train-card h3 {
+  margin-bottom: 10px;
+  color: #023e8a;
+  font-size: 1.2rem;
+}
+
+.train-card p {
+  margin: 5px 0;
+  color: #444;
+  font-size: 14px;
+}
+
+.class-prices ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 8px 0 12px;
+}
+
+.class-prices li {
+  font-size: 13px;
+  color: #555;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.class-prices li::before {
+  content: "•";
+  color: #0077b6;
+  position: absolute;
+  left: 0;
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button,
+.delete-button {
+  flex: 1;
+  padding: 10px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.edit-button {
+  background-color: #0077b6;
+}
+
+.edit-button:hover {
+  background-color: #005f87;
+}
+
+.delete-button {
+  background-color: #d32f2f;
+}
+
+.delete-button:hover {
+  background-color: #a0231f;
+}
